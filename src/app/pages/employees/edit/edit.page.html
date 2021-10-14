@@ -1,0 +1,53 @@
+
+
+<ion-content>
+ <h2>{{header}}</h2>
+
+ <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <ion-item>
+    <ion-label color="primary">eName</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eName" name="eName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eAddress</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eAddress" name="eAddress"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eEmail</ion-label>
+    <ion-input placeholder="Text Input"  [ngModel]="eEmail" name="eEmail"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eDOB</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eDOB" name="eDOB"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eGender</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eGender" name="eGender"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eDate_of_joining</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eDate_of_joining" name="eDate_of_joining"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">eMartial_status</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eMartial_status" name="eMartial_status"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label color="primary">eContact</ion-label>
+    <ion-input placeholder="Text Input" [ngModel]="eContact" name="eContact"></ion-input>
+  </ion-item>
+
+<ion-item>
+  <ion-button type="submit">Save</ion-button>
+</ion-item>
+
+  </form>
+
+</ion-content>

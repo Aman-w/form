@@ -1,0 +1,36 @@
+
+<div>
+
+  <a routerLink="/add/0">Add</a>
+
+  <table  style="width:fit-content">
+
+  <th>eName</th>
+  <th>eAddress </th>
+  <th>eEmail </th>
+  <th>eDOB </th>
+  <th>eGender </th>
+  <th>eDate_of_joining </th>
+  <th>eMartial_status </th>
+  <th>eContact </th>
+  <th></th>
+
+  <tbody>
+    <tr *ngFor="let emp of employees">
+
+      <td>{{emp.eName}}</td>
+      <td>{{emp.eAddress}}</td>
+      <td>{{emp.eEmail}}</td>
+      <td>{{emp.eDOB}}</td>
+      <td>{{emp.eGender}}</td>
+      <td>{{emp.eDate_of_joining}}</td>
+      <td>{{emp.eMartial_status}}</td>
+      <td>{{emp.eContact}}</td>
+      <td><a [routerLink]="['/edit',employees.id]">Edit</a></td>
+      <td><button (click)="onDelete(employees.id)">x</button></td>
+
+
+    </tr>
+  </tbody>
+  </table>
+</div>
